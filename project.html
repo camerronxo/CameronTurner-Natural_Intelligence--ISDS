@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How Cameron Turner built this portfolio site by directing an AI coding agent.">
+  <title>Cameron Turner | Project</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2313294b'/><text x='50' y='66' font-size='46' font-family='Arial' font-weight='700' fill='%23c8932f' text-anchor='middle'>CT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Cameron Turner</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html#profile">Profile</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="project.html" aria-current="page">Project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Building this site with an AI agent</h1>
+        <p>A vibe coding project for ISDS 3100 &middot; Fall 2026</p>
+      </div>
+    </div>
+
+    <div class="doc">
+      <div class="wrap">
+        <section>
+          <h2>The goal</h2>
+          <p>Build a professional, recruiter-facing website without a site builder: real HTML and CSS files that I own, can inspect, and keep under version control. An AI agent wrote the code; my job was to specify what I wanted, review what it produced, and decide when it was good enough.</p>
+          <p class="callout">The managerial skill here isn't typing code. It's being precise about what a system should do and judging whether the output actually does it.</p>
+        </section>
+
+        <section>
+          <h2>Tools</h2>
+          <ul>
+            <li><strong>Google Antigravity IDE</strong> for prompting the agent and reviewing every file it created</li>
+            <li><strong>Git</strong> to track each change, with commits spread across the build</li>
+            <li><strong>GitHub</strong> as the public repository and remote backup</li>
+            <li><strong>GitHub Pages</strong> to host the live site for free</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How I built it</h2>
+          <ol class="steps">
+            <li><strong>Set up the skeleton.</strong> Created four files (index, resume, project, styles) so every page shares one stylesheet and stays consistent.</li>
+            <li><strong>Wrote the content.</strong> Replaced the agent's generic filler with my real background, skills, and experience.</li>
+            <li><strong>Designed the look.</strong> Chose a navy and white palette with a gold accent, one typeface, and a sticky navigation bar that works on every page.</li>
+            <li><strong>Made it responsive.</strong> Tested at phone width and adjusted the layout so nothing scrolls sideways.</li>
+            <li><strong>Deployed and tested.</strong> Published with GitHub Pages and checked every link on the live site in more than one browser.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>What went wrong, and what I learned</h2>
+          <p>After several commits, I checked my repository on GitHub and found that four of my five files were completely empty, even though my commit messages described styling, pages, and a README. The site looked finished in my head but not on GitHub.</p>
+          <p>When I asked an AI assistant why, I learned that Git only records what's saved on disk at the moment you commit. If a file is still unsaved in the editor, Git commits the empty version and the message has nothing to do with what's actually inside. Now I save every file before committing and open each commit on GitHub to confirm the changes are really there.</p>
+        </section>
+
+        <section>
+          <h2>See the code</h2>
+          <p>Everything on this site is in a public repository: <a href="https://github.com/camerronxo/CameronTurner-Natural_Intelligence--ISDS" target="_blank" rel="noopener">github.com/camerronxo/CameronTurner-Natural_Intelligence--ISDS</a></p>
+          <p><a class="more" href="index.html">Back to my profile</a></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Cameron Turner &middot; <a href="index.html">Home</a> &middot; <a href="resume.html">Resume</a> &middot; <a href="project.html">Project</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

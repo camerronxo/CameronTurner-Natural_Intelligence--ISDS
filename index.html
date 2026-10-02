@@ -1,217 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Profile Page for Cameron Turner">
-    <title>Cameron Turner - Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cameron Turner, ISDS student at LSU. Profile, skills, experience and contact.">
+  <title>Cameron Turner | Profile</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2313294b'/><text x='50' y='66' font-size='46' font-family='Arial' font-weight='700' fill='%23c8932f' text-anchor='middle'>CT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Cameron Turner</h1>
-        <p><strong>Senior Software Engineer &amp; Technical Lead</strong></p>
-        <address>
-            <p>
-                Email: <a href="mailto:cameron@example.com">cameron@example.com</a><br>
-                Location: San Francisco, CA<br>
-                GitHub: <a href="https://github.com">github.com/cameronturner</a><br>
-                LinkedIn: <a href="https://linkedin.com">linkedin.com/in/cameronturner</a><br>
-                Website: <a href="https://example.com">cameronturner.dev</a>
-            </p>
-        </address>
-    </header>
-
-    <hr>
-
-    <nav>
-        <h2>Navigation</h2>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Cameron Turner</a>
+      <nav class="site-nav" aria-label="Main">
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Core Skills</a></li>
-            <li><a href="#experience">Work Experience</a></li>
-            <li><a href="#projects">Key Projects</a></li>
-            <li><a href="#education">Education &amp; Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#profile">Profile</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="project.html">Project</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <hr>
+  <main>
+    <div class="hero" id="profile">
+      <div class="wrap">
+        <h1>Cameron Turner</h1>
+        <p class="tagline">Junior in Information Systems &amp; Decision Sciences at LSU, looking for a summer IT internship.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="resume.html">View my resume</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! I am a passionate software engineer with over 8 years of experience in designing, building, and maintaining scalable web applications and distributed backend systems. I specialize in cloud infrastructure, API design, and cross-functional team leadership.
-            </p>
-            <p>
-                My approach to software engineering centers around code quality, maintainability, and user-centric problem solving. I enjoy mentoring engineers, conducting architecture reviews, and translating complex business requirements into robust technical implementations.
-            </p>
-            <blockquote>
-                <em>"Simplicity is prerequisite for reliability." &mdash; Edsger W. Dijkstra</em>
-            </blockquote>
-        </section>
+    <section aria-labelledby="about-h">
+      <div class="wrap">
+        <h2 id="about-h">About me</h2>
+        <p class="lede">I'm from Baton Rouge, Louisiana, and I'm a junior in the E. J. Ourso College of Business at LSU, graduating in May 2028.</p>
+        <p>I chose ISDS because I want to understand where data comes from, how technology shapes the way a business runs, and which systems make working with data faster. My job at a campus computing services center lets me see those systems up close every day.</p>
+      </div>
+    </section>
 
-        <hr>
+    <section id="skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <h2 id="skills-h">Skills</h2>
+        <div class="skill-groups">
+          <div>
+            <h3>Technical</h3>
+            <ul>
+              <li>Microsoft Excel (certified)</li>
+              <li>Mainframe monitoring</li>
+              <li>Campus network support</li>
+              <li>HTML &amp; CSS</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+          <div>
+            <h3>AI &amp; tools</h3>
+            <ul>
+              <li>Prompting AI coding agents</li>
+              <li>Google Antigravity IDE</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Professional</h3>
+            <ul>
+              <li>Customer service</li>
+              <li>Pair programming</li>
+              <li>Troubleshooting</li>
+            </ul>
+          </div>
+        </div>
+        <p class="more"><a href="resume.html#skills">Full skills list on my resume</a></p>
+      </div>
+    </section>
 
-        <section id="skills">
-            <h2>Core Skills</h2>
-            <dl>
-                <dt><strong>Programming Languages</strong></dt>
-                <dd>Python, Go, JavaScript, TypeScript, SQL, Bash</dd>
+    <section id="experience" aria-labelledby="exp-h">
+      <div class="wrap">
+        <h2 id="exp-h">Experience</h2>
+        <ol class="timeline">
+          <li>
+            <h3>Student Worker, Computing Services Center at LSU</h3>
+            <p class="meta">October 2025 &ndash; Present &middot; Baton Rouge, LA</p>
+            <p>Monitor mainframes across campus and help keep LSU's network connection stable.</p>
+          </li>
+          <li>
+            <h3>Customer Service</h3>
+            <p class="meta">Baton Rouge, LA</p>
+            <p>Helped customers directly, building the communication and problem-solving skills I now use in IT support.</p>
+          </li>
+        </ol>
+        <p class="more"><a href="resume.html#experience">Details on my resume</a></p>
+      </div>
+    </section>
 
-                <dt><strong>Backend &amp; API Development</strong></dt>
-                <dd>Node.js, Express, Django, FastAPI, RESTful APIs, GraphQL, gRPC</dd>
+    <section id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <h2 id="contact-h">Contact</h2>
+        <p>The fastest way to reach me is email. I'd be glad to talk about summer IT internships or anything on this site.</p>
+        <ul class="contact-list">
+          <li><strong>Email</strong> <a href="mailto:camturner648@gmail.com">camturner648@gmail.com</a></li>
+          <li><strong>GitHub</strong> <a href="https://github.com/camerronxo" target="_blank" rel="noopener">github.com/camerronxo</a></li>
+          <li><strong>Location</strong> Baton Rouge, LA</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-                <dt><strong>Databases &amp; Storage</strong></dt>
-                <dd>PostgreSQL, MySQL, Redis, MongoDB, Elasticsearch</dd>
-
-                <dt><strong>DevOps &amp; Cloud Infrastructure</strong></dt>
-                <dd>Docker, Kubernetes, AWS, Google Cloud Platform, Terraform, CI/CD pipelines</dd>
-
-                <dt><strong>Engineering Practices</strong></dt>
-                <dd>Microservices Architecture, Test-Driven Development (TDD), Agile/Scrum, System Design</dd>
-            </dl>
-        </section>
-
-        <hr>
-
-        <section id="experience">
-            <h2>Work Experience</h2>
-
-            <article>
-                <h3>Staff Software Engineer &mdash; Apex Cloud Technologies</h3>
-                <p><small>January 2023 &ndash; Present | San Francisco, CA</small></p>
-                <ul>
-                    <li>Architected and led the migration of monolithic billing services to an event-driven microservices architecture handling 15M+ daily transactions.</li>
-                    <li>Reduced latency on core data ingestion endpoints by 38% through Redis caching strategies and optimized database indexes.</li>
-                    <li>Mentored a team of 10 engineers across junior and senior levels, establishing company-wide standards for code reviews and integration testing.</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Senior Backend Engineer &mdash; Meridian Data Labs</h3>
-                <p><small>June 2020 &ndash; December 2022 | Austin, TX</small></p>
-                <ul>
-                    <li>Designed and maintained scalable RESTful and GraphQL APIs powering customer analytics dashboards.</li>
-                    <li>Automated deployment workflows using GitHub Actions and Terraform, decreasing deployment cycle time by 60%.</li>
-                    <li>Collaborated closely with product managers and frontend teams to deliver key enterprise compliance features ahead of schedule.</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Software Engineer &mdash; Horizon Interactive</h3>
-                <p><small>August 2017 &ndash; May 2020 | Seattle, WA</small></p>
-                <ul>
-                    <li>Developed responsive web components and integrated them with backend services using Python and PostgreSQL.</li>
-                    <li>Implemented automated unit and end-to-end testing suites, increasing test coverage from 45% to 88%.</li>
-                    <li>Investigated and resolved production bugs, ensuring 99.9% uptime for client-facing applications.</li>
-                </ul>
-            </article>
-        </section>
-
-        <hr>
-
-        <section id="projects">
-            <h2>Key Projects</h2>
-
-            <article>
-                <h3>Distributed Task Queue (Open Source)</h3>
-                <p>
-                    A lightweight, high-performance distributed task scheduler and message queue written in Go with Redis as the broker. Supports delayed execution, worker auto-scaling, and retry exponential backoff.
-                </p>
-                <p>
-                    <a href="https://github.com">View Repository on GitHub</a>
-                </p>
-            </article>
-
-            <article>
-                <h3>Real-Time Metrics Monitoring Dashboard</h3>
-                <p>
-                    A monitoring platform that collects system health telemetry from multiple nodes and visualizes timeseries data. Built with Python, WebSockets, and TimescaleDB.
-                </p>
-                <p>
-                    <a href="https://github.com">View Repository on GitHub</a>
-                </p>
-            </article>
-        </section>
-
-        <hr>
-
-        <section id="education">
-            <h2>Education &amp; Certifications</h2>
-
-            <article>
-                <h3>Bachelor of Science in Computer Science</h3>
-                <p>
-                    University of California, Berkeley<br>
-                    <small>Graduated: May 2017</small>
-                </p>
-            </article>
-
-            <article>
-                <h3>Certifications</h3>
-                <ul>
-                    <li>AWS Certified Solutions Architect &ndash; Professional (2024)</li>
-                    <li>Certified Kubernetes Administrator (CKA) &ndash; The Linux Foundation (2023)</li>
-                </ul>
-            </article>
-        </section>
-
-        <hr>
-
-        <section id="contact">
-            <h2>Send a Message</h2>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Contact Form</legend>
-
-                    <p>
-                        <label for="name">Your Name:</label><br>
-                        <input type="text" id="name" name="name" required>
-                    </p>
-
-                    <p>
-                        <label for="email">Your Email Address:</label><br>
-                        <input type="email" id="email" name="email" required>
-                    </p>
-
-                    <p>
-                        <label for="subject">Subject:</label><br>
-                        <input type="text" id="subject" name="subject" required>
-                    </p>
-
-                    <p>
-                        <label for="category">Reason for Inquiry:</label><br>
-                        <select id="category" name="category">
-                            <option value="general">General Inquiry</option>
-                            <option value="job">Job Opportunity</option>
-                            <option value="consulting">Consulting / Advising</option>
-                            <option value="speaking">Speaking Engagement</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="6" cols="45" required></textarea>
-                    </p>
-
-                    <p>
-                        <input type="submit" value="Send Message">
-                        <input type="reset" value="Clear Form">
-                    </p>
-                </fieldset>
-            </form>
-        </section>
-    </main>
-
-    <hr>
-
-    <footer>
-        <p>
-            <small>&copy; 2026 Cameron Turner. All rights reserved.</small>
-        </p>
-    </footer>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Cameron Turner &middot; <a href="index.html">Home</a> &middot; <a href="resume.html">Resume</a> &middot; <a href="project.html">Project</a></p>
+    </div>
+  </footer>
 
 </body>
 </html>
